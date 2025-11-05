@@ -51,7 +51,7 @@ Follow these simple steps to integrate libftprintf.a into your project.
 
 Start by getting the source code:
 ```bash
-git clone [Your Repository URL] ft_printf
+git clone [git@github.com:NoamaneElhansali/printf-42.git] ft_printf
 cd ft_printf
 ```
 
