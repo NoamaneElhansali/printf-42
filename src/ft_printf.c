@@ -18,12 +18,14 @@ static int format_speci(char c,va_list args)
         return (ft_putnbr_hex(va_arg(args,int),1));
     else if (c == '%')
         return (ft_putchar('%'));
-    return 0;
+    return (ft_putchar('%') + ft_putchar(c));
 }
 int ft_printf(const char *format, ...)
 {
     va_list args;
     int count = 0;
+    if (!format)
+        return (-1);
     va_start(args,format);
     int i = 0;
     while (format[i])

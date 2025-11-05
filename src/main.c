@@ -1,7 +1,10 @@
 #include "ft_printf.h"
+
 #include <stdio.h>
 int main()
 {
-    printf("%d \n",ft_printf("=> p 35 => %h  ",10));
+    // ft_printf("%r",10);
+    printf("%d",ft_printf(NULL,NULL));
+    printf("%d",printf(NULL,NULL));
     // printf("%d",printf("=> p 35 => %h  ",10));
 }
